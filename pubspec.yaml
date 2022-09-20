@@ -40,6 +40,16 @@ dependencies:
   carousel_slider: ^4.1.1
   shared_preferences: ^2.0.15
   google_fonts: ^3.0.1
+  flutter_downloader: ^1.8.0+1
+  dio: ^4.0.6
+  path_provider: ^2.0.11
+  backdrop: ^0.8.0
+  http: ^0.13.4
+  shimmer: ^2.0.0
+  hexcolor: ^2.0.7
+  mailer: ^5.2.0
+  multiselect: ^0.0.7
+  multi_select_flutter: ^4.1.2
 
 dev_dependencies:
   flutter_test:

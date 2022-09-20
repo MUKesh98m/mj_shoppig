@@ -1,21 +1,29 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:mj_shopping/pages/Date_time_picker.dart';
+import 'package:mj_shopping/pages/backdropscaffold.dart';
 import 'package:mj_shopping/pages/baseline.dart';
 import 'package:mj_shopping/pages/bottomsheet.dart';
 import 'package:mj_shopping/pages/carousel.dart';
 import 'package:mj_shopping/pages/checkbox.dart';
+import 'package:mj_shopping/pages/chip.dart';
+import 'package:mj_shopping/pages/expansionlist.dart';
 import 'package:mj_shopping/pages/floating_button.dart';
+import 'package:mj_shopping/pages/getdata.dart';
 import 'package:mj_shopping/pages/grid.dart';
 import 'package:mj_shopping/pages/login1.dart';
 import 'package:mj_shopping/pages/radiobutton.dart';
 import 'package:mj_shopping/pages/richtext.dart';
+import 'package:mj_shopping/pages/slider_progress.dart';
 import 'package:mj_shopping/pages/snackbar.dart';
+import 'package:mj_shopping/pages/steper.dart';
+import 'package:mj_shopping/pages/swipetodismiss.dart';
 import 'package:mj_shopping/pages/switch_button.dart';
 
 import '../drawer/drawer.dart';
 import 'alert.dart';
 import 'dropdown.dart';
+import 'hero.dart';
 
 final _darktheme = ThemeData(
   brightness: Brightness.dark,
@@ -311,6 +319,186 @@ class _homeState extends State<home> {
                         },
                         child: Text(
                           'Baseline',
+                          style: TextStyle(fontSize: 20, color: Colors.black),
+                        )),
+                  )
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  SizedBox(
+                    height: 100,
+                  ),
+                  Container(
+                    color: Colors.red,
+                    height: 50,
+                    width: 150,
+                    child: TextButton(
+                        onPressed: () {
+                          Navigator.of(context).push(MaterialPageRoute(
+                              builder: (context) => stepper()));
+                        },
+                        child: Text(
+                          'Stepper',
+                          style: TextStyle(fontSize: 20, color: Colors.black),
+                        )),
+                  ),
+                  Container(
+                    color: Colors.red,
+                    height: 50,
+                    width: 150,
+                    child: TextButton(
+                        onPressed: () {
+                          Navigator.of(context).push(MaterialPageRoute(
+                              builder: (context) => slider()));
+                        },
+                        child: Text(
+                          'Slider',
+                          style: TextStyle(fontSize: 20, color: Colors.black),
+                        )),
+                  )
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  SizedBox(
+                    height: 100,
+                  ),
+                  Container(
+                    color: Colors.red,
+                    height: 50,
+                    width: 150,
+                    child: TextButton(
+                        onPressed: () {
+                          Navigator.of(context).push(MaterialPageRoute(
+                              builder: (context) => chip_wrap()));
+                        },
+                        child: Text(
+                          'Chip_Wrap',
+                          style: TextStyle(fontSize: 20, color: Colors.black),
+                        )),
+                  ),
+                  Container(
+                    color: Colors.red,
+                    height: 50,
+                    width: 150,
+                    child: TextButton(
+                        onPressed: () {
+                          Navigator.of(context).push(MaterialPageRoute(
+                              builder: (context) => expansionlist()));
+                        },
+                        child: Text(
+                          'ExpansionList',
+                          style: TextStyle(fontSize: 20, color: Colors.black),
+                        )),
+                  )
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  SizedBox(
+                    height: 100,
+                  ),
+                  Container(
+                    color: Colors.red,
+                    height: 50,
+                    width: 150,
+                    child: TextButton(
+                        onPressed: () {
+                          Navigator.of(context).push(
+                              MaterialPageRoute(builder: (context) => swip()));
+                        },
+                        child: Text(
+                          'Swap',
+                          style: TextStyle(fontSize: 20, color: Colors.black),
+                        )),
+                  ),
+                  Container(
+                    color: Colors.red,
+                    height: 50,
+                    width: 150,
+                    child: TextButton(
+                        onPressed: () {
+                          Navigator.of(context).push(MaterialPageRoute(
+                              builder: (context) => expansionlist()));
+                        },
+                        child: Text(
+                          'ExpansionList',
+                          style: TextStyle(fontSize: 20, color: Colors.black),
+                        )),
+                  )
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  SizedBox(
+                    height: 100,
+                  ),
+                  Container(
+                    color: Colors.red,
+                    height: 50,
+                    width: 150,
+                    child: TextButton(
+                        onPressed: () {
+                          Navigator.of(context).push(MaterialPageRoute(
+                              builder: (context) => backdrop()));
+                        },
+                        child: Text(
+                          'Backdrop',
+                          style: TextStyle(fontSize: 20, color: Colors.black),
+                        )),
+                  ),
+                  Container(
+                    color: Colors.red,
+                    height: 50,
+                    width: 150,
+                    child: TextButton(
+                        onPressed: () {
+                          Navigator.of(context).push(MaterialPageRoute(
+                              builder: (context) => getdata()));
+                        },
+                        child: Text(
+                          'Getdata',
+                          style: TextStyle(fontSize: 20, color: Colors.black),
+                        )),
+                  )
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  SizedBox(
+                    height: 100,
+                  ),
+                  Container(
+                    color: Colors.red,
+                    height: 50,
+                    width: 150,
+                    child: TextButton(
+                        onPressed: () {
+                          Navigator.of(context).push(
+                              MaterialPageRoute(builder: (context) => hero()));
+                        },
+                        child: Text(
+                          'hero',
+                          style: TextStyle(fontSize: 20, color: Colors.black),
+                        )),
+                  ),
+                  Container(
+                    color: Colors.red,
+                    height: 50,
+                    width: 150,
+                    child: TextButton(
+                        onPressed: () {
+                          Navigator.of(context).push(MaterialPageRoute(
+                              builder: (context) => getdata()));
+                        },
+                        child: Text(
+                          'Getdata',
                           style: TextStyle(fontSize: 20, color: Colors.black),
                         )),
                   )

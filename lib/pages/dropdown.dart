@@ -13,6 +13,7 @@ class dropdown extends StatefulWidget {
 class _dropdownState extends State<dropdown> {
   var ls = ['one', 'two', 'three', 'four'];
   var _currentitem = 'one';
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -31,27 +32,6 @@ class _dropdownState extends State<dropdown> {
               setState(() {
                 _currentitem = value.toString();
               });
-            })
-        // DropdownButton(
-        //     items: ls
-        //         .map((item) => DropdownMenuItem(
-        //               child: Text(item),
-        //               value: item,
-        //             ))
-        //         .toList(),
-        //     value: _currentitem,
-        //     onChanged: (value) {
-        //       setState(() {
-        //         _currentitem = value.toString();
-        //         Fluttertoast.showToast(msg: _currentitem);
-        //       });
-        //     }),
-        );
-  }
-
-  void _dropdownmenu() {
-    var drop = AlertDialog(
-      title: Text("hii"),
-    );
+            }));
   }
 }
